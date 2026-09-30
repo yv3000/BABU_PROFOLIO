@@ -29,7 +29,7 @@ export const PROJECTS: Project[] = [
   },
 ]
 
-export const SKILLS = ['Nmap', 'Wireshark', 'Metasploit', 'Netcat', 'Linux CLI', 'TCP/IP', 'DNS', 'Web Security', 'Vulnerability Assessment']
+export const SKILLS = ['Python', 'Java', 'JavaScript', 'React', 'Node.js', 'Cybersecurity', 'Cloud Computing', 'Docker', 'Git', 'System Design']
 
 // ponytail: GitHub's auto-generated social card stands in for real screenshots; drop a real image URL here to override.
 export const preview = (p: Project) => `https://opengraph.githubassets.com/1/${p.repo.split('github.com/')[1]}`
