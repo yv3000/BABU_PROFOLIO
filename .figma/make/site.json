@@ -1,0 +1,10 @@
+{
+  "description": "Experience a retro Windows 95 style web application showcasing a portfolio with projects, contact info, and customizable settings for tech enthusiasts.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

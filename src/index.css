@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600&family=VT323&display=swap');
+@import 'tailwindcss';
+
+:root {
+  --desk: #008080; --face: #c0c0c0; --hi: #fff; --lo: #808080; --dk: #000; --ink: #000;
+  --title: linear-gradient(90deg, #000080, #1084d0); --field: #fff;
+}
+.dark {
+  --desk: #10162b; --face: #3a3d4a; --hi: #6a6e80; --lo: #1c1e26; --dk: #000; --ink: #e8e8ee;
+  --title: linear-gradient(90deg, #4b1d6b, #b0337a); --field: #22242d;
+}
+body { margin: 0; font-family: Tahoma, Verdana, 'Segoe UI', sans-serif; font-size: 13px; color: var(--ink); background: #000; }
+.px { font-family: 'Pixelify Sans', sans-serif; }
+.out { background: var(--face); box-shadow: inset -1px -1px var(--dk), inset 1px 1px var(--hi), inset -2px -2px var(--lo), inset 2px 2px var(--face); }
+.in { background: var(--field); box-shadow: inset -1px -1px var(--hi), inset 1px 1px var(--lo), inset -2px -2px var(--face), inset 2px 2px var(--dk); }
+button.out:active, button.pressed { box-shadow: inset -1px -1px var(--hi), inset 1px 1px var(--dk), inset -2px -2px var(--face), inset 2px 2px var(--lo); }
+button:focus-visible, a:focus-visible { outline: 1px dotted var(--ink); outline-offset: -4px; }
+@keyframes pop { from { transform: scale(.85); opacity: 0 } to { transform: none; opacity: 1 } }
+@keyframes rise { from { transform: translateY(8px); opacity: 0 } to { transform: none; opacity: 1 } }
+.pop { animation: pop .16s cubic-bezier(.2,.9,.3,1.2); }
+.rise { animation: rise .14s ease-out; }
+::selection { background: #000080; color: #fff; }
+@keyframes boot { from { transform: translateX(-100%) } to { transform: translateX(300%) } }
+.boot-bar { animation: boot 1s linear infinite; }
+@media (prefers-reduced-motion: reduce) { .boot-bar { animation: none; width: 100% } }
